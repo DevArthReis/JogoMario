@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR"> <!-- Inicia o documento HTML, definindo o idioma como português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Garante que o site utilize o modo de compatibilidade mais recente do Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Define a largura da viewport para otimização em dispositivos móveis -->
+    <title>MARIO</title> <!-- Define o título da página que aparece na aba do navegador -->
+    <link rel="shortcut icon" href="/img/png-transparent-new-super-mario-bros-2-mushroom-pixel-text-super-mario-bros-rectangle-removebg-preview.png" type="image/x-icon"> <!-- Define o ícone da aba do navegador -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Adiciona o CSS do Bootstrap para estilização -->
+    <link rel="stylesheet" href="/css/Style.css"> <!-- Link para um arquivo CSS local para estilos personalizados -->
+</head>
+<body>
+    <div class="navbar"> <!-- Div que contém a barra de navegação -->
+        <img src="/img/logo.png" alt="Logo" class="logo"> <!-- Imagem do logo do jogo -->
+    </div>
+
+    <div class="game"> <!-- Div principal que contém os elementos do jogo -->
+        <img class="mario" src="img/mario.gif" alt="mario"> <!-- Imagem animada do Mario -->
+        <img class="pipe" src="img/pipe.png" alt="cano"> <!-- Imagem do cano -->
+        <img class="clouds" src="img/clouds.png" alt="nuvem"> <!-- Imagem das nuvens -->
+        <button class="btn btn-success start" onclick="startGame()">Iniciar</button> <!-- Botão para iniciar o jogo, chama a função startGame() -->
+    </div>
+
+    <div class="game-over" style="display: none;"> <!-- Div que aparece quando o jogo termina, inicialmente oculta -->
+        <h1>Morreu</h1> <!-- Mensagem que aparece quando o jogador perde -->
+        <button class="btn btn-success" onclick="restartGame()">Reiniciar</button> <!-- Botão para reiniciar o jogo, chama a função restartGame() -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript que contém a lógica do jogo -->
+</body>
+</html>
+
+
+
+
+
